@@ -1,0 +1,32 @@
+{
+  "name": "music-festival",
+  "version": "1.0.0",
+  "description": "Project with Gulp, SaSS & HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stepha-gon/Music-Festival.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Stephanie Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stepha-gon/Music-Festival/issues"
+  },
+  "homepage": "https://github.com/Stepha-gon/Music-Festival#readme",
+  "dependencies": {
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  }
+}
