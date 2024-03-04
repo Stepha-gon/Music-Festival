@@ -551,9 +551,28 @@ img {
   background: rgb(39, 160, 164);
   background: linear-gradient(90deg, rgba(39, 160, 164, 0.6643032213) 15%, rgba(19, 136, 107, 0.868785014) 64%);
 }
+.bg-yellow li:nth-child(odd) {
+  background-color: rgba(37, 152, 156, 0.6643032213);
+}
 
 .bg-blue {
   border-radius: 2rem;
   background: rgb(44, 118, 233);
   background: linear-gradient(90deg, rgba(44, 118, 233, 0.5326505602) 16%, rgba(67, 9, 121, 0.5746673669) 59%);
+}
+.bg-blue li:nth-child(odd) {
+  background-color: rgba(93, 52, 131, 0.575);
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
 }
