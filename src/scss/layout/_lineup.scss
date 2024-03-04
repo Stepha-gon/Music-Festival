@@ -1,0 +1,75 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.lineup {
+  background-color: rgb(255, 255, 255); //#d7d1c4;
+  padding: 5rem 0;
+
+  h3,
+  p {
+    text-align: center;
+    font-family: v.$title-font;
+  }
+  h3 {
+    color: v.$white;
+    background-color: v.$black;
+    border-radius: 2rem;
+    font-weight: 900;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+
+    padding: 1rem;
+  }
+  .dia-presentacion {
+    text-align: center;
+    font-family: v.$title-font;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+}
+.escenarios-contenedor {
+  @include m.tablet {
+    @include m.grid(2, 5rem);
+  }
+}
+
+.escenario {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+
+  p {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 29%, rgba(6, 6, 6, 1) 44%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .icon {
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+}
+
+.bg-yellow {
+  border-radius: 2rem;
+  //background-color: rgba(255, 183, 90, 0.788);
+  background: rgb(39, 160, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(39, 160, 164, 0.6643032212885154) 15%,
+    rgba(19, 136, 107, 0.8687850140056023) 64%
+  );
+}
+
+.bg-blue {
+  border-radius: 2rem;
+  //background-color: rgba(202, 109, 144, 0.836);
+  background: rgb(44, 118, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(44, 118, 233, 0.5326505602240896) 16%,
+    rgba(67, 9, 121, 0.5746673669467788) 59%
+  );
+}

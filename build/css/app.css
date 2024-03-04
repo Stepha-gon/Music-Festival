@@ -353,6 +353,8 @@ h3 {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -451,10 +453,10 @@ img {
 }
 
 .sobre-festival {
-  padding: 5rem 0;
-  background-color: rgb(107, 159, 207);
-  max-width: 1200rem;
-  width: 100%;
+  padding: 5rem 5rem;
+  background-color: #d7d1c4;
+  max-width: 100%;
+  width: auto;
 }
 @media (min-width: 768px) {
   .sobre-festival {
@@ -485,4 +487,73 @@ img {
   font-weight: 900;
   width: fit-content;
   padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .imagen {
+    align-content: center;
+  }
+}
+
+.lineup {
+  background-color: rgb(255, 255, 255);
+  padding: 5rem 0;
+}
+.lineup h3,
+.lineup p {
+  text-align: center;
+  font-family: "Anta", sans-serif;
+}
+.lineup h3 {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 2rem;
+  font-weight: 900;
+  width: fit-content;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+.lineup .dia-presentacion {
+  text-align: center;
+  font-family: "Anta", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.escenario {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.escenario p {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 29%, rgb(6, 6, 6) 44%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.escenario .icon {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.bg-yellow {
+  border-radius: 2rem;
+  background: rgb(39, 160, 164);
+  background: linear-gradient(90deg, rgba(39, 160, 164, 0.6643032213) 15%, rgba(19, 136, 107, 0.868785014) 64%);
+}
+
+.bg-blue {
+  border-radius: 2rem;
+  background: rgb(44, 118, 233);
+  background: linear-gradient(90deg, rgba(44, 118, 233, 0.5326505602) 16%, rgba(67, 9, 121, 0.5746673669) 59%);
 }
