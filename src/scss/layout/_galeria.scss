@@ -9,20 +9,23 @@
     padding: 5rem;
   }
 
-  background: rgb(173, 127, 51);
+  background: rgb(32, 172, 135);
   background: linear-gradient(
     90deg,
-    rgba(173, 127, 51, 0.6643032212885154) 15%,
-    rgba(198, 179, 159, 0.8687850140056023) 64%
+    rgba(32, 172, 135, 0.7679446778711485) 15%,
+    rgba(35, 161, 159, 0.9136029411764706) 42%,
+    rgba(99, 112, 191, 0.8799894957983193) 55%,
+    rgba(103, 59, 175, 0.6783088235294117) 73%
   );
-
-  h3 {
-    text-align: center;
-    font-family: v.$title-font;
-    text-transform: uppercase;
-  }
 }
-
+h3 {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 29%, rgba(6, 6, 6, 1) 44%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .galeria-imagenes {
   @include m.reset-list;
   @include m.grid(2, 2rem);
