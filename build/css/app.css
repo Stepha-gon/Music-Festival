@@ -316,6 +316,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
+body.fijar-body {
+  overflow: hidden;
+}
 
 p {
   font-size: 2rem;
@@ -324,7 +327,7 @@ p {
 }
 
 .contenedor {
-  width: 95%;
+  width: 100%;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -575,4 +578,84 @@ img {
 }
 .calendario li span {
   font-weight: 400;
+}
+
+.galeria {
+  max-width: 100%;
+  width: auto;
+  padding: 2rem;
+  background: rgb(173, 127, 51);
+  background: linear-gradient(90deg, rgba(173, 127, 51, 0.6643032213) 15%, rgba(198, 179, 159, 0.868785014) 64%);
+}
+@media (min-width: 768px) {
+  .galeria {
+    padding: 5rem;
+  }
+}
+.galeria h3 {
+  text-align: center;
+  font-family: "Anta", sans-serif;
+  text-transform: uppercase;
+}
+
+.galeria-imagenes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 390px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+.overlay picture {
+  display: block;
+  max-width: 80rem;
+}
+
+.btn-cerrar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  background-color: rgb(49, 156, 160);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-family: "Anta", sans-serif;
+}
+.btn-cerrar:hover {
+  cursor: pointer;
 }
