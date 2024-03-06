@@ -2,8 +2,10 @@
 @use "../base/mixins" as m;
 
 .lineup {
-  background-color: rgb(255, 255, 255); //#d7d1c4;
-  padding: 5rem 0;
+  border-top: 4px solid darken(v.$beige, 10%);
+  background: v.$beige;
+  padding-top: 5rem;
+  padding-top: 1rem;
 
   h3,
   p {
@@ -11,13 +13,14 @@
     font-family: v.$title-font;
   }
   h3 {
-    color: v.$white;
-    background-color: v.$black;
-    border-radius: 2rem;
+    background: rgb(88, 218, 182);
+    background: linear-gradient(0deg, rgba(88, 218, 182, 1) 11%, rgba(6, 6, 6, 1) 57%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-weight: 900;
-    width: fit-content;
+    font-size: 4rem;
     margin: 0 auto 2rem auto;
-
     padding: 1rem;
   }
   .dia-presentacion {

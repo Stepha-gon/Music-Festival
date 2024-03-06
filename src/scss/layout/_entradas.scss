@@ -1,0 +1,91 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.entradas {
+  padding: 5rem 0;
+  background-color: v.$beige;
+  max-width: 100%;
+  width: auto;
+
+  h3 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: v.$title-font;
+    background: rgb(88, 218, 182);
+    background: linear-gradient(0deg, rgba(88, 218, 182, 1) 11%, rgba(6, 6, 6, 1) 57%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  h2 {
+    background-color: black;
+    color: v.$white;
+    max-width: 30rem;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .contenedor-entradas {
+    @include m.tablet {
+      @include m.grid(2, 5rem);
+      //   .combo-4-general {
+      //     grid-column: 2;
+      //   }
+    }
+  }
+}
+
+.pase {
+  border: 2px solid black;
+  color: v.$black;
+  font-family: v.$title-font;
+  .vip {
+    background: rgb(204, 53, 226);
+    background: linear-gradient(
+      0deg,
+      rgba(204, 53, 226, 0.8575805322128851) 23%,
+      rgba(245, 103, 60, 0.7315301120448179) 52%
+    );
+  }
+  .general {
+    background: rgb(147, 23, 199);
+    background: linear-gradient(
+      0deg,
+      rgba(147, 23, 199, 0.7315301120448179) 16%,
+      rgba(53, 161, 226, 0.8575805322128851) 63%
+    );
+  }
+  &-header {
+    text-align: center;
+
+    p {
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  &-footer {
+    text-align: center;
+    p {
+      margin: 0;
+      font-family: v.$main-font;
+      font-weight: 600;
+      span {
+        color: rgb(228, 132, 23);
+      }
+    }
+  }
+  &-body {
+    ul {
+      @include m.reset-list;
+      li {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 2px solid darken(v.$beige, 10%);
+      }
+    }
+  }
+}

@@ -8,7 +8,12 @@
   @include m.tablet {
     padding: 5rem;
   }
-
+  h3 {
+    text-align: center;
+    color: v.$black;
+    font-family: v.$title-font;
+    font-weight: 900;
+  }
   background: rgb(32, 172, 135);
   background: linear-gradient(
     90deg,
@@ -18,14 +23,7 @@
     rgba(103, 59, 175, 0.6783088235294117) 73%
   );
 }
-h3 {
-  text-align: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 29%, rgba(6, 6, 6, 1) 44%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
+
 .galeria-imagenes {
   @include m.reset-list;
   @include m.grid(2, 2rem);

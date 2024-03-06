@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 
 .sobre-festival {
-  padding: 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   background-color: v.$beige; //rgba(114, 173, 241, 0.753);
   max-width: 100%;
   width: auto;
@@ -33,5 +33,7 @@
 .imagen {
   @include m.tablet {
     align-content: center;
+    width: 700px;
+    height: 700px;
   }
 }

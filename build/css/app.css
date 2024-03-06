@@ -456,7 +456,7 @@ img {
 }
 
 .sobre-festival {
-  padding: 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   background-color: #d7d1c4;
   max-width: 100%;
   width: auto;
@@ -495,12 +495,16 @@ img {
 @media (min-width: 768px) {
   .imagen {
     align-content: center;
+    width: 700px;
+    height: 700px;
   }
 }
 
 .lineup {
-  background-color: rgb(255, 255, 255);
-  padding: 5rem 0;
+  border-top: 4px solid #c2b9a6;
+  background: #d7d1c4;
+  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .lineup h3,
 .lineup p {
@@ -508,11 +512,13 @@ img {
   font-family: "Anta", sans-serif;
 }
 .lineup h3 {
-  color: #ffffff;
-  background-color: #000000;
-  border-radius: 2rem;
+  background: rgb(88, 218, 182);
+  background: linear-gradient(0deg, rgb(88, 218, 182) 11%, rgb(6, 6, 6) 57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-weight: 900;
-  width: fit-content;
+  font-size: 4rem;
   margin: 0 auto 2rem auto;
   padding: 1rem;
 }
@@ -592,14 +598,11 @@ img {
     padding: 5rem;
   }
 }
-
-h3 {
+.galeria h3 {
   text-align: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgb(255, 255, 255) 29%, rgb(6, 6, 6) 44%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #000000;
+  font-family: "Anta", sans-serif;
+  font-weight: 900;
 }
 
 .galeria-imagenes {
@@ -662,4 +665,90 @@ h3 {
 }
 .btn-cerrar:hover {
   cursor: pointer;
+}
+
+.entradas {
+  padding: 5rem 0;
+  background-color: #d7d1c4;
+  max-width: 100%;
+  width: auto;
+}
+.entradas h3 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Anta", sans-serif;
+  background: rgb(88, 218, 182);
+  background: linear-gradient(0deg, rgb(88, 218, 182) 11%, rgb(6, 6, 6) 57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.entradas h2 {
+  background-color: black;
+  color: #ffffff;
+  max-width: 30rem;
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: 4rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .entradas .contenedor-entradas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase {
+  border: 2px solid black;
+  color: #000000;
+  font-family: "Anta", sans-serif;
+}
+.pase .vip {
+  background: rgb(204, 53, 226);
+  background: linear-gradient(0deg, rgba(204, 53, 226, 0.8575805322) 23%, rgba(245, 103, 60, 0.731530112) 52%);
+}
+.pase .general {
+  background: rgb(147, 23, 199);
+  background: linear-gradient(0deg, rgba(147, 23, 199, 0.731530112) 16%, rgba(53, 161, 226, 0.8575805322) 63%);
+}
+.pase-header {
+  text-align: center;
+}
+.pase-header p {
+  text-transform: uppercase;
+  margin: 0;
+}
+.pase-footer {
+  text-align: center;
+}
+.pase-footer p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.pase-footer p span {
+  color: rgb(228, 132, 23);
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid #c2b9a6;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 1rem;
+}
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem;
 }
