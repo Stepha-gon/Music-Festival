@@ -5,60 +5,63 @@
   background-color: v.$blue;
   @include m.tablet {
     &.fijo {
+      font-size: 1rem;
       left: 0;
       top: 0;
       position: fixed;
       width: 100%;
       box-shadow: 0.3rem 0.3rem 0.3rem #333;
-      height: 4.5rem;
-
+      height: 4rem;
       background-color: v.$dark-blue;
-      .contenido-header {
+
+      .navegacion-principal {
         padding: 0rem;
       }
-    }
-  }
-
-  h1 {
-    //color: v.$white;
-    font-family: v.$title-font;
-    text-align: center;
-    background: linear-gradient(to right, v.$pink, v.$yellow);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    @include m.tablet {
-      margin: 0;
-    }
-  }
-  .contenido-header {
-    padding: 2rem;
-    @include m.tablet {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
   }
 }
 
 .navegacion-principal {
+  padding: 2rem;
+  text-align: center;
   @include m.tablet {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
   }
-  a {
-    display: block;
-    text-align: center;
-    color: v.$white;
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
 
-    @include m.tablet {
-      margin: 0;
+  .logo {
+    a {
+      font-size: 4rem;
+      font-family: v.$title-font;
+      text-align: center;
+      background: linear-gradient(to right, v.$pink, v.$yellow);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      &.fijo {
+        font-size: 2rem;
+      }
     }
+  }
+  .enlaces-navegacion {
+    @include m.tablet {
+      display: flex;
+      gap: 2rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      color: v.$white;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      @include m.tablet {
+        margin: 0;
+      }
 
-    &:hover {
-      color: v.$yellow;
+      &:hover {
+        color: v.$yellow;
+      }
     }
   }
 }

@@ -2,11 +2,12 @@
 @use "../base/mixins" as m;
 
 .sobre-festival {
-  padding: 15rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   background-color: v.$beige; //rgba(114, 173, 241, 0.753);
   max-width: 100%;
   width: auto;
-  @include m.tablet {
+  @include m.desktop {
+    padding-top: 15rem;
     @include m.grid(2, 5rem);
   }
 }
@@ -15,11 +16,17 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 5rem;
-  @include m.tablet {
+  @include m.desktop {
     margin-top: 0;
   }
   h2 {
     margin-bottom: 2rem;
+    background: rgb(88, 218, 182);
+    background: linear-gradient(0deg, rgb(72, 153, 130) 11%, rgba(6, 6, 6, 1) 57%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
   }
   .fecha {
     color: v.$dark-green;
@@ -31,9 +38,7 @@
   }
 }
 .imagen {
-  @include m.tablet {
+  @include m.desktop {
     align-content: center;
-    width: 700px;
-    height: 700px;
   }
 }

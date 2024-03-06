@@ -36,6 +36,10 @@
     font-size: 7rem;
     margin: 0;
     font-family: v.$title-font;
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
   }
   p {
     background-color: v.$red;

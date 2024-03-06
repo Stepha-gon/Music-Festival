@@ -3,12 +3,22 @@ const { src, dest, watch } = require("gulp");
 
 const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+const postcss = require("gulp-postcss");
+const sourcemaps = require("gulp-sourcemaps");
 
 function css(done) {
   //identificar archivo sass
   //Compilarlo
   //almacenarla en el disco duro
-  src("src/scss/**/*.scss").pipe(plumber()).pipe(sass()).pipe(dest("build/css"));
+  src("src/scss/**/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("build/css"));
 
   done();
 }

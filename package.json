@@ -27,11 +27,16 @@
     "sass": "^1.71.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "cssnano": "^6.1.0",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-webp": "^4.0.1"
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.35"
   }
 }

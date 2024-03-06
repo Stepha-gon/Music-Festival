@@ -30,11 +30,13 @@
   }
 
   .contenedor-entradas {
+    //row-gap: 2rem;
+    .pase {
+      margin-bottom: 2rem;
+    }
     @include m.tablet {
       @include m.grid(2, 5rem);
-      //   .combo-4-general {
-      //     grid-column: 2;
-      //   }
+      margin-bottom: 0;
     }
   }
 }
