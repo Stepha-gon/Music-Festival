@@ -45,7 +45,7 @@ function crearGaleria() {
             loading="lazy"
             width="200"
             height="300"
-            src="../img/small/${i}.jpg"
+            src="./img/small/${i}.jpg"
             alt="Imagen de la galeria" />`;
 
     imagen.onclick = function () {
