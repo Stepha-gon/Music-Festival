@@ -6,11 +6,16 @@
   width: auto;
   padding: 2rem;
   @include m.tablet {
-    padding: 5rem;
+    padding: 10rem 5rem 5rem 5rem;
   }
   h3 {
     text-align: center;
-    color: v.$black;
+    background: rgb(88, 218, 182);
+    background: linear-gradient(0deg, rgb(72, 153, 130) 11%, rgba(6, 6, 6, 1) 57%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
     font-family: v.$title-font;
     font-weight: 900;
   }

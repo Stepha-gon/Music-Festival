@@ -12,7 +12,6 @@ function css(done) {
 
   done();
 }
-
 function dev(done) {
   watch("src/scss/**/*.scss", css);
   done();

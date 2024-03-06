@@ -3,6 +3,22 @@
 
 .header {
   background-color: v.$blue;
+  @include m.tablet {
+    &.fijo {
+      left: 0;
+      top: 0;
+      position: fixed;
+      width: 100%;
+      box-shadow: 0.3rem 0.3rem 0.3rem #333;
+      height: 4.5rem;
+
+      background-color: v.$dark-blue;
+      .contenido-header {
+        padding: 0rem;
+      }
+    }
+  }
+
   h1 {
     //color: v.$white;
     font-family: v.$title-font;
