@@ -58,12 +58,12 @@ function crearGaleria() {
 function mostrarImagen(index) {
   const imagen = document.createElement("picture");
   imagen.innerHTML = `
-        <source srcset="../img/large/${index}.webp" type="image/webp" />
+        <source srcset="./img/large/${index}.webp" type="image/webp" />
           <img
             loading="lazy"
             width="200"
             height="300"
-            src="../img/large/${index}.jpg"
+            src="./img/large/${index}.jpg"
             alt="Imagen de la galeria" />`;
 
   //* crea overlay de la imagen
