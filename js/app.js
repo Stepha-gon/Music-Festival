@@ -58,7 +58,7 @@ function crearGaleria() {
 function mostrarImagen(index) {
   const imagen = document.createElement("picture");
   imagen.innerHTML = `
-        <source srcset="./img/large/${index}.webp" type="image/webp" />
+        
           <img
             loading="lazy"
             width="200"
